@@ -163,7 +163,7 @@ while running:
         restart = font.render("Press R to Restart", True, BLACK)
         exit_text = font.render("Press ESC to Exit", True, BLACK)
 
-        screen.blit(title, (220, 220))
+        screen.blit(title, (300, 220))
         screen.blit(restart, (210, 330))
         screen.blit(exit_text, (210, 420))
 
