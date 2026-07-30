@@ -15,7 +15,6 @@ BLUE = (0, 120, 255)
 winner = None
 game_state = "MENU"
 
-#MAZEEEEEE
 CELL_SIZE = 40
 
 maze=[
@@ -64,7 +63,7 @@ frame_count = 0
 ai_delay = 70
 
 
-# UHOHHHHH THE AI CODEEEEE
+# UHOHHHHH THE AI PATH
 ai_path = [
 (0,1),(1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),
 (7,2),(7,3),(6,3),(5,3),(5,4),(5,5),(4,5),(3,5),
@@ -87,7 +86,6 @@ while running:
     frame_count += 1
 
 
-#No event=pygame.event.get because usme ek baar value assign ho gayi to ho gayi phir kitni bhi keys daba kuch nai hoga. Agar karna hai to inside list bana but just using pygae.smth is better
  #check events
     for current_event in pygame.event.get():
 
