@@ -5,7 +5,7 @@ pygame.init()
 
 font = pygame.font.SysFont(None, 72)
 
-#Setting the display window
+
 WHITE=(255,255,255)
 BLACK=(0,0,0)
 RED = (255,0,0)
@@ -59,7 +59,6 @@ player_size = 24
 
 ai_row = 0
 ai_col = 1
-speed = 1
 
 frame_count = 0
 ai_delay = 70
@@ -95,6 +94,7 @@ while running:
         if current_event.type == pygame.QUIT:
             running=False
 
+        #Checking If any key was pressed
         elif current_event.type == pygame.KEYDOWN:
              
              if game_state == "MENU":
@@ -141,11 +141,11 @@ while running:
 
     #MENU
     if game_state == "MENU":
-       title = font.render("THE MAZEEEEE GAME", True, BLACK)
+       title = font.render("THE MAZEEEEE GAME", True, BLACK)   #Image created
        start = font.render("Press ENTER to Start", True, BLACK)
        exit_text = font.render("Press ESC to Exit", True, BLACK)
 
-       screen.blit(title, (160, 200))
+       screen.blit(title, (160, 200))   #Image pasted
        screen.blit(start, (180, 330))
        screen.blit(exit_text, (180, 420))
        pygame.display.update()
@@ -156,7 +156,7 @@ while running:
         if winner=="PLAYER":
             title = font.render("YOU WIN!", True, BLACK)
         elif winner=="AI":
-              title = font.render("AI WIN!", True, BLACK)
+              title = font.render("COMPUTER WINS!", True, BLACK)
         else:
               title = font.render("GAME PAUSED!", True, BLACK)
         
